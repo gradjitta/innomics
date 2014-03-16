@@ -1,0 +1,32 @@
+#gotitle
+{
+  display:block;
+  background-color:#366;
+  width:100%;
+  text-align:center;
+  margin-bottom:2em;
+  color:#fff;
+  line-height:2em;
+  font-weight:bold;
+
+}
+
+
+#go
+{
+  display:block;
+  background-color:#366;
+  width:70%;
+  margin-left:10%;
+  border:2px solid #000
+}
+#row1
+{
+  font-weight:bold;
+  color:#fff;
+}
+#row2
+{
+  font-weight:bold;
+  color:#fff;
+}

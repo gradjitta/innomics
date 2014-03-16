@@ -1,0 +1,98 @@
+  <html>
+        <head>
+              <title>
+                     innomics new look!!!!
+              </title>
+              <link rel="stylesheet" type="text/css" href="sheet1.css" media="all" />
+              <script language="javascript">
+               function pointer(i)
+               {
+               var e = document.getElementById("pointer");
+               if(i==1)
+               {
+               e.style.visibility="visible";
+               e.style.left="200px";
+               }
+               else if(i==2)
+               {
+               e.style.visibility="visible";
+               e.style.left="350px";
+               }
+               else if(i==3)
+               {
+                e.style.visibility="visible";
+               e.style.left="500px";
+               }
+               i=0;
+               }
+               function hide()
+               {
+                var e = document.getElementById("pointer");
+                e.style.visibility="hidden";
+               }
+
+              </script>
+        </head>
+        <body id="main">
+        <div id="logo">
+
+        </div>
+        <div id="headerMain">
+             <b>i n n o m i c s</b>
+        </div>
+        <div id="partition">
+        
+
+                 <a href=""></a>
+
+
+
+        </div>
+        <div id="mainStuff">
+        <div id="navsite">
+
+<ul >
+    <li class="home"><a href="index.php">inn Hmm</a></li>
+    <li class="club"><a href="innclub.htm">inn Club</a></li>
+    <li class="lab"><a href="innlab.htm">inn Labs</a></li>
+    <li class="three"><a href="inn3.htm">inn 3</a></li>
+    </ul>
+
+
+
+</div>
+
+
+<div id="content">
+<p>
+Innomics is back!! this time its fully functional....with a few developements to carry on..
+We being web developers and bioinformaticians,whenever we come across a tool we get inspired,to implement a tool like that
+in bioinformatics..this is how innomics was born...people ask me .."arrey what is <b>innomics</b>??", "is it some sort of
+economics,social networking site??"..as of now there is no answer...but in an year or 2..we would be answering all the doubts...
+</p>
+
+
+
+
+<div id="image">
+     <img src="picc.JPG"/>
+</div>
+
+</div>
+
+<div id="pointer">
+</div>
+</div>
+<div id="footer">
+<div id="admin">
+<ul>
+<li class="adm">Developers  - </li>
+<li id="aditya" onmouseover="pointer(3)" onmouseout="hide()"><a href="inn3.htm">Aditya.J</a></li>
+<li id="teja" onmouseover="pointer(1)" onmouseout="hide()"><a href="inn3.htm">Teja.N.V</a></li>
+<li id="venky" onmouseover="pointer(2)" onmouseout="hide()"><a href="inn3.htm">Venkatakrishnan.A.J</a></li>
+</ul>
+</div>
+</div>
+
+        </body>
+  </html>

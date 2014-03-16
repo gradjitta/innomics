@@ -1,0 +1,194 @@
+#main
+{
+  border:none;
+  background-color:#202020;
+  width:1000px;
+  margin:auto;
+}
+#headerMain
+{
+
+	background-image: url(images/labhead.jpg);
+	background-repeat: repeat-x;
+
+}
+#headerMain
+{
+  display:block;
+  padding-top:1em;
+  padding-bottom:0.5em;
+  margin:2px 30px 0 30px;
+  text-align:center;
+  font-weight:bold;
+  color:#fff;
+  font-size:30px;
+
+
+
+
+}
+#partition
+{
+  display:block;
+  background-color:#f0f0f0;
+  height:0.5em;
+  margin:0.5em 30px 0.3em 30px;;
+
+}
+  #partition
+{
+
+  text-decoration:none;
+}
+
+#mainStuff
+{
+  display:block;
+  height:400px;
+  background-color:#fff;
+  margin:2px 30px 0 30px;
+  padding-bottom:5em;
+}
+
+#hspdb
+{
+  display:block;
+  float:left;
+  width:400px;
+  height:110px;
+  margin-left:240px;
+  margin-top:100px;
+  font-size:100px;
+  background-color:#000;
+  text-align:center;
+  padding:10px;
+}
+#hspdb a
+{
+   text-decoration:none;
+  color:#eff;
+  padding-top:10px;
+}
+#tejaslam
+{
+  display:block;
+  float:left;
+  width:400px;
+  height:50px;
+  margin-left:240px;
+  margin-top:10px;
+  font-size:30px;
+  background-color:#000;
+  text-align:center;
+  padding:10px;
+}
+#tejaslam a
+{
+   text-decoration:none;
+  color:#eff;
+}
+
+
+
+
+
+
+
+#navsite {
+ font-family: Verdana, Helvetica, Arial, sans-serif;
+ font-size: 1em;
+ font-weight: bold;
+ color: #333;
+ float:left;
+ width:100%;
+ border-bottom:2px solid #000;
+ background-color:#cccccc;
+ padding-top:0.5em;
+
+}
+
+#navsite ul {
+ list-style: none;
+
+}
+
+#navsite ul li
+ {
+
+
+ display:inline;
+
+}
+
+#navsite ul li a
+{
+ width:14%;
+ float:left;
+ display:block;
+ text-align:center;
+
+ border-right: 1px solid #69c;
+ border-bottom: 1px solid #369;
+ background-color: #000;
+ color: #fff;
+ text-decoration: none;
+ margin-right:3.5em;
+}
+#navsite ul li.home a:hover
+{
+ background-color: #559900;
+ color: #fff;
+
+}
+#navsite ul li.club a:hover
+{
+ background-color: #ff9900;
+ color: #fff;
+
+}
+#navsite ul li.lab a
+{
+ background-color: #69f;
+ color: #fff;
+
+}
+#navsite ul li.three a:hover
+{
+ background-color: #111199;
+ color: #fff;
+
+}
+#admin
+{
+  display:block;
+  margin:0 30px 0 30px;
+  background-image:url(images/head4.jpg);
+  background-repeat:repeat-x ;
+  color:#fff;
+  height:4em;
+}
+#admin ul li a
+{
+  color:#fff;
+  text-decoration:none;
+  padding-right:5px;
+  margin-right:5px;
+  margin-bottom:5px;
+
+}
+#admin ul  li a:hover
+{
+  color:#fff;
+  text-decoration:none;
+  border-bottom:3px solid #69f;
+
+
+
+}
+
+#admin ul li
+{ position:relative;
+  display:inline;
+  top:1em;
+
+}

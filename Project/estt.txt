@@ -1,0 +1,12 @@
+104K_THEAN	893	Theileria annulata.	NCBI_TaxID=5874;	101921
+104K_THEPA	924	Theileria parva.	NCBI_TaxID=5875;	103626
+108_LYCES	102	Lycopersicon esculentum (Tomato).	NCBI_TaxID=4081;	10576
+10KD_VIGUN	75	Vigna unguiculata (Cowpea).	NCBI_TaxID=3917;	8523
+110KD_PLAKN	296	Plasmodium knowlesi.	NCBI_TaxID=5850;	34077
+11S2_SESIN	459	Sesamum indicum (Oriental sesame) (Gingelly).	NCBI_TaxID=4182;	51830
+11S3_HELAN	493	Helianthus annuus (Common sunflower).	NCBI_TaxID=4232;	55687
+11SB_CUCMA	480	Cucurbita maxima (Pumpkin) (Winter squash).	NCBI_TaxID=3661;	54626
+128UP_DROME	368	Drosophila melanogaster (Fruit fly).	NCBI_TaxID=7227;	41132
+12AH_CLOS4	29	Clostridium sp. (strain C 48-50).	NCBI_TaxID=1507;	2900
+12KD_FRAAN	111	Fragaria ananassa (Strawberry).	NCBI_TaxID=3747;	12416
+12KD_MYCSM	24	Mycobacterium smegmatis.	NCBI_TaxID=1772;	2766

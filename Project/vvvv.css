@@ -1,0 +1,121 @@
+body{
+     background-color: #efffff;
+
+
+}
+#main{
+	background-color:#0c9;
+	margin:-1em -0.43em 1em -1em;
+	padding: 0.2em 0.3em;
+	text-align:center;
+	display:block;
+	font-size:larger;
+
+
+}
+#main h1{
+	color:#fff;
+}
+#bar{
+	display:block;
+	background-color:#457;
+	font-style:italic;
+	color:#fff;
+        text-align:right;
+        margin:-18px -8px 0 -1em;
+
+}
+
+#maintext  b.cons:hover{
+	color:#bac;
+
+
+}
+#maintext .cons{
+        display:block;
+	font-size:0.9em;
+	color:#030;
+	float:left;
+        margin:1em;
+	padding:0 70% 13.3em 0;
+
+
+}
+#maintext .soon{
+	font-size:auto;
+}
+#about p{
+
+        width:300px;
+        text-align:left;
+ 	    background-color:#eef;
+        float:left;
+        margin:0 0 0 -20em;
+        padding:10px;
+        padding-right:30px;
+        font-style:italic;
+
+
+
+
+
+}
+
+#adminbar li {
+ 		display:inline;
+ 		color:white;
+ 		border-right:1px solid gray;
+ 		padding-right:6px;
+
+
+
+}
+#adminbar li a{
+color:white;
+text-decoration:none;
+}
+#admins span{
+	display:block;
+	margin:15em -0.43em -1em -1em;
+	background-color:#457;
+	text-align: left;
+	padding:0.5em 0.5em 2em 0.5em;
+	clear:both;
+	border:1px solid #000;
+}
+#adminbar li:hover{
+	color:#aaa;
+}
+#adminbar li.a{
+	font-weight:bold;
+	color:gray;
+}
+#hspdb{
+	display:block;
+	margin:0 40em 0 40em;
+	padding:0em;
+	background-color:#457;
+	font-style:italic;
+	font-family:verdana;
+	text-align:center;
+	position:relative;
+	left:50px;
+	bottom:50px;
+
+
+}
+
+#hspdb a{
+	text-decoration:none;
+	color:white;
+
+}
+#links{
+  position:absolute;
+  top:200px;
+  left:50px;
+
+}
+#links a{
+text-decoration:none;
+}

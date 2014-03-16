@@ -1,0 +1,175 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<div id="main">
+   <h3 align="center" style="text-decoration:underline">SCALARS</h1>
+   <p align="center" id="first"><font color="green">P</font>ractical <font color="green">E</font>xtraction and <font color="green">R</font>eporting <font color="green">L</font>anguage.</p>
+   <div align="right" style="margin-right:40px;">
+   <script language="javascript">
+   var d=new Date();
+
+if(navigator.appName.indexOf("Internet")>0)
+{
+document.write("<font color=\"green\">"+d.getDate()+"-"+(d.getMonth()+1)+"-"+d.getYear()+"</font>");
+}
+else
+{
+ document.write("<font color=\"green\">"+d.getDate()+"-"+(d.getMonth()+1)+"-"+(d.getYear()+1900)+"</font>");
+} 
+</script>
+   </div>
+   <p><b>SCALARS</b></p>
+   <p>Scalars are the basic datatypes in Perl. A scalar variable can only hold a single value at a time.Scalars are denoted by symbol '$' and followed by variable name</p>
+<p>Example : $dna,&nbsp;$rna,&nbsp;$length_of_dna &nbsp;etc etc</p>
+<p><b>Variable Naming conventions</b></p>
+   <p>You can give any name to your variable.but there are some rules that you should follow while naming a variable.Here are some main rules</p>
+   <p><ol type="1">
+       <li>A variable name should start with either alphabet or underscore. Ex: $valueofabsorbance, $_teja</li>
+	   <li>There should not be any special symbols or spaces between variable name Except an underscore.</li>
+	   <li>Variable names are case sensitive. i.e $dna,$DNA,$dNa,$Dna all are different variables.</li>
+	   </ol> </p>
+	   <p>Examples of invalid variable names : $dna to mrna. This is invalid because of white spaces. you can rename it as $dna_to_mrna.<br>
+	    $value@absorbnce -This is also invalid as @ symbol is present in between variable name</p>
+	    <p><b>POINT TO REMEMBER </b></p>
+	    <p>the symbol '$' which comes before a variable name tells that the variable is a scalar variable.<br>
+	     Ex:$dna - This means variable "dna" is of type scalar. i.e variable $dna can only hold one value at a given time.</p>
+	     <p> Now back to Scalar variables. I told that a scalar variable can only hold one value at a time.Now lets check how to store a value in a variable and how to retrieve a value from that variable</p>
+	     <p>Check the following program</p>
+	    <p><PRE>
+	       #!usr/bin/perl -w
+	       $dna="AGCT";
+	       print $dna;    #prints AGCT to the screen
+	       </PRE></p>
+	       <p>Time to discuss-</p>
+	       <p> First line-shebang line.Refer to previous chapter about more information.</p>
+	       <p><i>$dna</i> This is the scalar variable in this program. As I said it can store one value at a time. That value may be anything. A dna string OR absorbance value OR length of a dna string etc etc . But it can only store only one value at a time. To understand this point check the program below.</p>
+	       <p><PRE>
+	       #!usr/bin/perl -w
+	       $dna="AGCT";
+	       print $dna;    #prints AGCT to the screen
+	       $dna=15;
+	       print $dna;    #prints 15 to the screen
+	       $dna=1.02;
+	       print $dna;    #prints 1.02 to the screen
+	       </PRE></p>
+	     <p> when $dna is first used we have stored "AGCT"(string) into it.In the next step we have stored 15(integer),next 1.02(floating value).A scalar variable can store any type of data , i.e strings,numbers or decimals, but only one value at a time.</p>
+		 <p> <b>Comments</b></p> 
+		 <p> Comments are just information that are embedded into the program. Comments in perl start with symbol '#'.when compiler encounters '#' anywhere in the program it just ignores the rest of the line.Hence rest of that line wont gets executed.Comments are just included for additional information.In the above program  I have included 3 comments after 3 print statements.Comments are not necessary for any program but including them makes it easier for others to understand your code.</p>
+		 <p><b>Working with numbers</b></p> 
+		 <p>You already know by now that you can store any type of data in a scalar variable.Lets talk about numbers now.</p>
+		 <p>There are 2 types of numbers. Integers and floating point(decimals).Both these types can be stored in a scalar variable.</p>
+		 <p><pre>
+		   #!usr/bin/perl -w
+		   $num=1;
+		   print $num;
+		   $fnum=2.345;
+		   print $num;
+		   $lnum=1_23_456;
+		   print $lnum;  #prints 123456. $lnum will have 123456
+		   </pre></p>
+		<p>Check the last variable $lnum. I ve used underscores in a number!!!. Yes we can use underscore in a big number for clarity.<br>
+		Example: 234_456, 1_2. These evaluates to 234456 and 12 respectively.</p>
+		<p><b>Strings</b></p>
+		<p>Strings in perl should be enclosed in either single quotes or double quotes</p>
+		<p><PRE>
+		     #!usr/bin/perl -w
+		     print "hi to perl";
+		     $str="this is a string";
+		     $str1='this is also a string';
+		     print $str,$str1;# output is hi to perlthis is a stringthis is also a string
+		     </PRE></p>
+		     <p> The above program prints the message <b>hi to perl</b> first , then prints the contents of variables $str and $str1. But in the output all the three strings appear in a single line. Can't we print them in three seperate lines? Yes we can</p>
+			 <p><PRE>
+			#!usr/bin/perl -w
+		     print "hi to perl";
+		     print "\n";
+		     $str="this is a string";
+		     $str1='this is also a string';
+		     print $str;
+		     print "\n";
+		     print $str1;
+		     </PRE></p>
+		     <p>when we print \n the cursor automatically moves to the next line.</p>
+		     <p><b>Caution</b>- Be sure to use double quotes " " around \n. if you use single quotes the print statement just prints the string \n to the screen but not a new line .</p>
+		     <p> We can also concatenate two strings using concatenation operator(.)</p>
+		     <p><PRE>
+		    #!usr/bin/perl -w
+		     $str1="this is string 1";
+		     $str2="this is string 2";
+		     $str3=$str1.$str2;
+		     print $str1."\n".$str2."\n";
+		     print $str3;
+		     </PRE></p>
+		     <p> In the above program we have concatenated $str1,$str2 and placed the resultant concatenated string in the variable $str3. So the variable $str3 contains the string "this is string 1this is string 2".</p>
+			 <p> In the first print statement we have concatenated $str1 and a new line character \n and $str2 and again another \n. so the result will be</p>
+			 <p><PRE>
+			 this is string 1
+			 this is string 2
+			 </PRE></p>
+			 <p>The second print statement just prints the value of $str3  i.e <b>this is string 1this is string 2</b>.So the total output of the above program is </p>
+			 <p><PRE>
+			 this is string 1
+			 this is string 2
+			 this is string 1this is string 2</PRE></p>		     
+		<p><b>Variable Interpolation</b></p>
+		<p>Check the following program</p>
+		<p><PRE>
+		    #!usr/bin/perl -w
+		    $mol="TGCAGCTGCT";
+		    print $mol;
+		    print "$mol";
+		    print '$mol';
+		    </PRE></p>
+		    
+		<p>Can you predict the output of the above program?</p>
+		<p>The FIRST print statement prints TGCAGCTGCT, SECOND print statement prints TGCAGCTGCT,but the THIRD print statement only prints $mol but not the value TGCAGCTGCT present in the $mol variable. Wonder why?</p>
+		<p> PERL interpolates i.e gives the value of the variable when the variable is enclosed in double quotes or when variable is used without quotes.when single quotes are used perl just prints out the string itself  without printing the actual contents of any variable present in that string.This interploation is helpful in many cases.Lets look at one below </p>
+		<p><PRE>
+		    #!usr/bin/perl -w
+		    $mol="PGTHVNMP";
+		    print "$mol value is $mol";
+		    print '$mol value is $mol';
+		    print '$mol value is'.$mol; 
+		 </PRE></p>
+		 <p>Guess the output of this program? Here it is</p>
+<p>First print statement - PGTHVNMP value is PGTHVNMP.  This happens because we have used double quotes to enclose a string so variable interpolation occurs.</p>
+<p>Second print statement - $mol value is $mol. This happens because we have used single quotes around the string. so NO interploation occurs and the string is print as such.</p>
+<p>Third print statement.- $mol value is PGTHVNMP. This is the right and informative print statement here.we have concatenated string '$mol value is' with variable $mol and printed the resultant string to the screen here.The first part is in single quotes ,and after concatenation operator (.) we have used variable name $mol without any quotes.So it is interpolated and the string is printed.
+</p>
+<p>What if you want to print the string in double quotes and escape the interpolation? Then you have to use backslash(\) before the variable you didnot want to interpolate.</p>
+<p><PRE>
+       #!usr/bin/perl -w
+	   $mol="GTGTGTGT";
+	   print"\$mol content is $mol"; #this prints $mol content is GTGTGTGT
+	   </PRE>
+</p>
+<p>Here the backslash before $mol tells the parser to just print the $mol but not its value.</p>
+<p>Backslash ca also be used to print single quotes in a double quoted string and vice-versa</p>
+<p><PRE>
+       #!usr/bin/perl -w
+         print "this is teja\' s tutorial"; # prints this is teja's tutorial	   
+	   	   </PRE>
+</p>	    
+<p><b>Excercises</b><br>
+1)which of the following are invalid variable names?<br>
+   &nbsp;&nbsp;&nbsp;a)$t$eja b)_$dna c)$mrna d)$dna string<br>
+2) Correct any mistakes if found in this following program.<br>
+<pre>
+    #!usr/bin\perl -w
+    $ dna="GTACGT"
+    print "hi to".$dna;
+</pre>    
+3)predict the output of the following program<br>
+  <pre>
+      #!usr/bin/perl -w
+      $mol="ACUGUCGAAUCGG";
+      $abs=0.45;
+      print "$mol contains molecule $mol";
+      print"\n Its absorbance is $abs";</pre>
+4) write a program to concatenate 3 dna strings and print the resultant string to the screen? Can you concatenate the strings without using concatenation operator?
+</p>   	
+   <p id="footer"><b>Tutorial by</b><br>Viswateja Nelakuditi<br>Btech Bioinformatics<br>VIT university</p>
+   </body>
+</html>

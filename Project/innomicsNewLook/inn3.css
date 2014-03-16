@@ -1,0 +1,249 @@
+#main
+{
+  border:none;
+  background-color:#202020;
+  width:1000px;
+  margin:auto;
+}
+#headerMain
+{
+
+	background-image: url(images/inn3head.jpg);
+	background-repeat: repeat-x;
+
+}
+#headerMain
+{
+  display:block;
+  padding-top:1em;
+  padding-bottom:0.5em;
+  margin:2px 30px 0 30px;
+  text-align:center;
+  font-weight:bold;
+  color:#fff;
+  font-size:30px;
+
+
+
+
+}
+#partition
+{
+  display:block;
+  background-color:#f0f0f0;
+  height:0.5em;
+  margin:0.5em 30px 0.3em 30px;;
+
+}
+  #partition
+{
+
+  text-decoration:none;
+}
+
+#mainStuff
+{
+  display:block;
+  height:400px;
+  background-color:#fff;
+  margin:2px 30px 0 30px;
+  padding-bottom:5em;
+}
+#content #aditya
+{
+  display:block;
+  position:relative;
+  top:10px;
+  margin-right:0px;
+  float:right;
+  color:#333333;
+  font-style:italic;
+  background-color:#efefef;
+  padding-left:10px;
+  border-left:10px solid #4444ff;
+  width:400px;
+  height:30px;
+}
+#content #teja
+{
+  display:block;
+  position:relative;
+  float:right;
+  color:#333333;
+  margin-right:0px;
+  font-style:italic;
+  background-color:#efefef;
+  top:50px;
+  padding-left:10px;
+  border-left:10px solid #4444ff;
+  width:400px;
+  height:30px;
+}
+#content #venkat
+{
+  display:block;
+  position:relative;
+  float:right;
+  color:#333333;
+  font-style:italic;
+  background-color:#efefef;
+  top:90px;
+  margin-right:0px;
+  padding-left:10px;
+  border-left:10px solid #4444ff;
+  width:400px;
+  height:40px;
+}
+#content #aditya .name1
+{
+  display:block;
+  float:left;
+  color:#090;
+  font-weight:bold;
+  padding-right:3px;
+}
+#content #teja .name2
+{
+  display:block;
+  float:left;
+  color:#f96;
+  font-weight:bold;
+  padding-right:3px;
+}
+ #content #venkat .name3
+{
+  display:block;
+  float:left;
+  color:#69f;
+  font-weight:bold;
+  padding-right:3px;
+}
+#image3>img
+{
+  display:block;
+  float:left;
+  width:300px;
+  height:300px;
+}
+#content1
+{
+
+  display:block;
+  clear:both;
+  width:300px;
+  height:70px;
+  padding:3px;
+  background-color:#eef;
+  font-family: Helvetica;
+  color:#909090;
+  line-height:1em;
+  border-left:10px solid #4444ff;
+  position:relative;
+  left:300px;
+
+}
+
+
+
+
+
+
+#navsite {
+ font-family: Verdana, Helvetica, Arial, sans-serif;
+ font-size: 1em;
+ font-weight: bold;
+ color: #333;
+ float:left;
+ width:100%;
+ border-bottom:2px solid #000;
+ background-color:#cccccc;
+ padding-top:0.5em;
+
+}
+
+#navsite ul {
+ list-style: none;
+
+}
+
+#navsite ul li
+ {
+
+
+ display:inline;
+
+}
+
+#navsite ul li a
+{
+ width:14%;
+ float:left;
+ display:block;
+ text-align:center;
+
+ border-right: 1px solid #69c;
+ border-bottom: 1px solid #369;
+ background-color: #000;
+ color: #fff;
+ text-decoration: none;
+ margin-right:3.5em;
+}
+#navsite ul li.home a:hover
+{
+ background-color: #559900;
+ color: #fff;
+
+}
+#navsite ul li.club a:hover
+{
+ background-color: #ff9900;
+ color: #fff;
+
+}
+#navsite ul li.lab a:hover
+{
+ background-color: #69f;
+ color: #fff;
+
+}
+#navsite ul li.three a
+{
+ background-color: #111199;
+ color: #fff;
+
+}
+#admin
+{
+  display:block;
+  margin:0 30px 0 30px;
+  background-image:url(images/head4.jpg);
+  background-repeat:repeat-x ;
+  color:#fff;
+  height:4em;
+}
+#admin ul li a
+{
+  color:#fff;
+  text-decoration:none;
+  padding-right:5px;
+  margin-right:5px;
+  margin-bottom:5px;
+
+}
+#admin ul  li a:hover
+{
+  color:#fff;
+  text-decoration:none;
+  border-bottom:3px solid #69f;
+
+
+
+}
+
+#admin ul li
+{ position:relative;
+  display:inline;
+  top:1em;
+
+}
+

@@ -1,0 +1,90 @@
+#main{
+	background-color:#0c9;
+	margin:-1em -0.43em 1em -1em;
+	padding: 0.2em 0.3em;
+	text-align:center;
+	display:block;
+	font-size:larger;
+	
+	
+}
+#main h1{
+	color:#fff;
+}
+#bar{
+	display:block;
+	background-color:#457;
+	margin:-2em -0.5em 1em -0.5em;
+	text-align:right;
+	font-style:italic;
+	color:#fff;
+}
+#maintext{
+	margin:-1em -0.3em 0em -.2em ;
+	background-color:#efffff;
+	padding-top:3em;
+	padding-bottom:25%;
+	display:block;
+	padding-left:0;
+	text-align:left;
+}
+#maintext  b:hover.cons{
+	color:#bac;
+
+	
+}
+#maintext .cons{
+	font-size:0.9em;
+	color:#030;
+}
+#maintext .soon{
+	font-size:auto;
+}
+#about p{
+ 	margin:-20em -0.3em 2em 10em;
+ 	padding:1em;
+ 	background-color:#eef;
+ 	display:block;
+	text-align:left;
+	line-height:1.2em;
+	font-size:1em;
+	font-style:italic;
+	float:right;
+}
+
+#adminbar li {
+ 		display:inline;
+ 		color:white;
+ 		border-right:1px solid gray;
+ 		padding-right:6px;
+ 		
+}	
+#admins span{
+	display:block;
+	margin:-0.5em -0.4em 2em -0.6em;
+	background-color:#457;
+	text-align: left;
+	padding:0.5em;
+}
+#adminbar li:hover{
+	color:#aaa;
+}
+#adminbar li.a{
+	font-weight:bold;
+	color:gray;
+}
+#hspdb{
+	display:block;
+	margin:-5em 0em -1em 50em;
+	background-color:#457;
+	font-style:italic;
+	font-family:verdana;
+	text-align:center;
+	
+}
+
+#hspdb a{
+	text-decoration:none;
+	color:white;
+	
+}

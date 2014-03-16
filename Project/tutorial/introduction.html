@@ -1,0 +1,100 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<div id="main">
+   <h3 align="center" style="text-decoration:underline">INTRODUCTION</h1>
+   <p align="center" id="first"><font color="green">P</font>ractical <font color="green">E</font>xtraction and <font color="green">R</font>eporting <font color="green">L</font>anguage.</p>
+   <div align="right" style="margin-right:40px;">
+   <script language="javascript">
+   var d=new Date();
+
+if(navigator.appName.indexOf("Internet")>0)
+{
+document.write("<font color=\"green\">"+d.getDate()+"-"+(d.getMonth()+1)+"-"+d.getYear()+"</font>");
+}
+else
+{
+ document.write("<font color=\"green\">"+d.getDate()+"-"+(d.getMonth()+1)+"-"+(d.getYear()+1900)+"</font>");
+} 
+</script>
+   </div>
+   <p><font size="5">P</font>erl,<font size="5">P</font>erl,<font size="5">P</font>erl.<br>
+       so what is perl?why should one learn perl? how is it different from C/C++ and java?why C/C++ and java aren't enough for biological 
+	problems?Is perl enough for a biologist?Can we solve any problem through perl?Well..... all these queries will be solved in this introduction section.</p>
+	<br>
+	<p><b>"Since many researchers who describe their work as "bioinformatics" don't program at all,
+but rather, use programs written by others, it's tempting to ask, "Do I really need to learn
+programming to do bioinformatics?" At one level, the answer is no, you don't. You can
+accomplish quite a bit using existing tools, and there are books and documentation
+available to help you learn those tools. But at another, higher level, the answer to the
+question changes. What happens when you want to do something a preexisting tool
+doesn't do? What happens when you can't find a tool to accomplish a particular task, and
+you can't find someone to write it for you?
+At that point, you need to learn to program. And even if you still rely mainly on existing
+programs and tools, it can be worthwhile to learn enough to write small programs. Small
+programs can be incredibly useful. For example, with a bit of practice, you can learn to
+write programs that run other programs and spare yourself hours sitting in front of the
+computer doing things by hand.
+Many scientists start out writing small programs and find that they really like
+programming. As a programmer, you never need to worry about finding the right tools
+for your needs; you can write them yourself."</b></p>
+<p>This is the text that is directly taken from book <b><i>Beggining perl for bioinformatics[o'reilly]</i></b>which is the first book i ve read for perl</p>
+<p><b>Perl</b> is a programming language that is familiar to anyone who uses unix operating system.It is developed by <b><i>Larry wall</i></b>.
+Perl is a general purpose programming language which can be used for variety of tasks like System admimistration,Network programming,text processing,
+Bioinformatics,Web developement,software engineering etc etc....a lotta them.</p>
+<p><h3>why perl is suited for biological problems and why not c/c++ or java?</h3></p>
+<p> The answer is straight!!! because remaining languages cannot match the complexity of the biology!!!!<br>
+I will explain this in a simple way......i.e by showing you an example</p>
+<p>say you have two DNA strings "AGCTGCTGTGCGTGCATTGCTGC".Now your task is to find mrna from this dna string..i.e to transcribe it.
+<br>
+So here goes a C program for that
+<PRE>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+char a[]="AGCTGCTGTGCGTGCATTGCTGC";
+char *p;
+int i=0,length=0;
+p=&a[0];
+while(*p!='\0')
+{
+if(*p=='T')
+{
+a[i]="U";
+}
+length=++i;
+p++;
+} 
+printf("The transcribed DNA string is");
+for(i=0;i&lt;length;i++)
+{
+	printf("%s",a[i]);
+}
+</PRE>
+</p>
+<p>I really thinks this program works....I have stopped working in C a long time back!!!</p>
+<p><b>Now check the same progam in perl</b><br>
+<PRE>
+#!usr/bin/perl -w
+$str="AGCTGCTGTGCGTGCATTGCTGC";
+$str=~s/T/U/g;
+print $str;
+</PRE>
+</p>
+<p>BY this time I guess you have clearly understood the difference between perl and C/C++.<br>
+The main advantage of perl is its efficiency of text processing.C/C++,JAVA really lacks that.while a typical program in C/C++/JAVA takes some 100lines of code ..it may get finished in only 15-20 lines in perl</p>
+<p>Imagine that u have to open a protein file which is in swissprot format and have to fetch sequence data from it...in C or C++ it may take minimum of 2-300 lines while in perl u may finish it up in &lt50 lines code!!!!!</p>
+<p> Perl's  benefits
+   <ol>
+      <li>Ease of programming</li>
+      <li>Rapid developement</li>
+      <li>Portability,speed and maintainence</li>
+      </ol>
+      </p>
+<p>Portability means compliance of any software or program across many platforms..I mean once if you write a program in perl on any platform say windows..you can = run the same program on any other platforms like LINUX,Mac,Solaris etc ...with no modification or minor modifications in thr originalprogram</p>
+
+<p><b>Thats it for the introduction.I think  by now u know why to use perl for solving biological problems...We shall continue with PERL installation issues in the next chapter!</b></p>
+<p id="footer"><b>Tutorial by</b><br>Viswateja Nelakuditi<br>Btech Bioinformatics<br>VIT university</p>
+   </body>
+</html>

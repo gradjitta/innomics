@@ -1,0 +1,29 @@
+<?php
+session_start();
+$first_name=$_POST['first_name'];
+$middle_name=$_POST['middle_name'];
+$last_name=$_POST['last_name'];
+$gender=$_POST['gender'];
+$dob=$_POST['date']."-".$_POST['month']."-".$_POST['year'];
+$email=$_POST['email'];
+$phoneno=$_POST['phone_no'];
+$mobileno=$_POST['mobile_no'];
+$cuisine=$_POST['cusine'];
+$movie=$_POST['movie'];
+$book=$_POST['book'];
+$actor=$_POST['actor'];
+$author=$_POST['author'];
+$color=$_POST['color'];
+$hobbies=$_POST['hobbies'];
+$place=$_POST['place'];
+$singer=$_POST['singer'];
+$sport=$_POST['sport'];
+$regno=$_SESSION['regno'];
+$conn=mysql_connect("localhost","innomics","aditya314");
+mysql_select_db("innomics_org_-_RTDB",$conn);
+$query="insert into personal values('$first_name','$middle_name','$last_name','$gender','$dob','$email',
+                                    '$phoneno','$mobileno','$cuisine','$movie','$book','$actor','$author',
+                                    '$color','$hobbies','$place','$singer','$sport','$regno')";
+mysql_query($query,$conn);
+header('Location: t3.php');
+?>

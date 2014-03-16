@@ -1,0 +1,23 @@
+ <html>
+ <head>
+ </head>
+ <body>
+ <link rel="stylesheet" type="text/css" href="go.css" media="all" />
+ <div id="gotitle">Gene Ontology Based Search</div>
+ <div id="go">
+ <form name="mainGo" method="get" action="goresults.php">
+ <table id="gotable">
+ <tr id="row1">
+ <td>Enter protein id or the keyword</td>
+ <td><input type="text" name="textinput"></td>
+ </tr>
+ <tr id="row2">
+ <td>Select the following to refine the search   </td>
+ <td><select name="goCode"><option value="A" name="A">All the Below </option><option name ="F" value="F">molecular Function </option><option name="P" value="P">biological processes </option><option name ="C" value="C">cellular components </option></select></td>
+ </tr>
+ <tr><td id="button"><input type="submit"></td></tr>
+ </form>
+ </table>
+ </div>
+ </body>
+ </html>

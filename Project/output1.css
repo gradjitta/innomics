@@ -1,0 +1,159 @@
+body{
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+
+#total{
+	width:600px;
+	margin:auto;
+}
+#ProtId a,#getfasta a
+{
+  text-decoration: none;
+}
+#ProtId ,#getfasta
+{
+  text-align:center;
+}
+
+#molweight,#length{
+	display:block;
+	background-color:white;
+	color:black;
+
+}
+
+#molweight .mw1,#length .len1{
+	border-bottom:2px solid #ccc;
+	border-left:2px solid #ccc;
+	text-align:left;
+	display:block;
+	color:#078;
+}
+#molweight .mw2,#length .len2{
+	background-color:#fff;
+	display:block;
+	text-align:center;
+}
+#accno .ac1{
+ border-bottom:2px solid #ccc;
+ border-left:2px solid #ccc;
+	display:block;
+	text-align:left;
+	color:#078;
+	
+}
+#accno .ac2{
+	background-color:#fff;
+	display:block;
+	text-align:center;
+}
+
+#des .desc{
+ 		display:block;
+ 		text-align:center;
+ 		background-color:#eee;
+ 		color:black;
+
+}
+.protname,.os_data{
+	display:block;
+	background-color:#fff;
+        text-align:center;
+}
+#cc{
+	background-color:white;
+
+}
+
+
+#names
+{
+  display:block;
+  background-color:#fff;
+  font-size:0.9em;
+  color:#000;
+  font-weight:bold;
+
+}
+#titleList,#journals
+{
+  display:block;
+  background-color:#fff;
+  font-size:0.9em;
+  color:#000;
+  font-weight:bold
+}
+
+#names a:hover
+{
+  color:red;
+}
+
+#aut,#datahead,#seqId,#footer,#cita,#keyword span ,#title,#idhead,.mw1,.ac1,.desc,.os,.len1
+{
+  display:block;
+  color:#078;
+  border-bottom:2px solid #ccc;
+  border-left:2px solid #ccc;
+  text-align:left;
+  padding-top:2px;
+  padding-bottom:2px;
+  font-weight:bold;
+  text-transform:uppercase;
+  text-decoration:none;
+}
+
+#datalist
+{
+  list-style-type:none;
+  display:inline;
+}
+#sequence
+{
+  background-color:#fff;
+  font-size:1em;
+  display:block;
+  text-align:left;
+
+}
+#data1,#titleList
+{
+  display:block;
+  background-color:#fff;
+
+}
+#journals ul
+{
+  background-color:#fff;
+}
+#PropId
+{
+  display:block;
+  background-color:#fff;
+}
+select {
+
+ color: white; 
+
+ background-color: blue;
+
+ font-size: 0.9em;
+
+}
+#AjaxFeed
+{
+  overflow:scroll;
+  width:500;
+  height:100;
+}
+
+
+
+
+
+
+
+
+

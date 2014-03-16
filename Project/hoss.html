@@ -1,0 +1,72 @@
+<html>
+<head>
+<style type="text/css">
+.hoss h3{
+color:#366;
+}
+.hoss{
+position:absolute;
+left:20px;
+top:25px;
+}
+.one
+{
+height:100px;
+position:absolute;
+top:80px;
+background-color:#eee;
+}
+.two{
+border:1px solid #366;
+position:absolute;
+top:199px;
+padding:0.5em 0em 0em 0em;
+background-color:#066;
+height:25px;
+left:80px;
+ width:390px;
+ color:#366;
+}
+</style>
+<script language="javascript">
+function check()
+{
+var word=document.forms[0].elements[0].value;
+var reg=/^[a-z]+$/;
+if(word.length<3)
+{
+alert("Entered Organ/Tissue does not exist");
+return false;
+}
+else if(!reg.test(word))
+{
+alert("No Numbers/special symbols allowed");
+return false;
+}
+return true;
+}
+</script>
+</head>
+<body style="margin-left:3em;">
+<div class="hoss">
+<h3 style="margin-left:3em;">Human Organ/Tissue Specific search</h3>
+</div>
+<div class="one">
+<b>HOSS : HUMAN ORGAN SPECIFIC SEARCH </b>
+<br><br>
+<i>Query for the proteins with <b>Organ or Tissue</b>&nbsp name as input</i>
+
+</div>
+<div class="two">
+                         <font color="white" style="font-family:verdana" size="2" >
+                                 <form name="basicform"  method="get" action="hossresults.php" onsubmit="return check()">
+                                  &nbsp;&nbsp;Enter Organ/Tissue &nbsp;&nbsp;
+                                  <input type="text" name="org">
+                                 <input type="submit" value="Search" style="background-color:white;color:#153E7E" onclick="no()">
+                                 </form>
+                         </font>
+                      </div>
+</body>
+</html>
+
+

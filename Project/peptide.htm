@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>
+Guess The Peptide-By Viswateja.N Btech Bioinformatics
+</title>
+<script language="javascript">
+function present(pos)
+{
+var flag=0;
+for(var j=0;j<Rand_array.length;j++)
+    {
+    if(Rand_array[j]==pos)
+       {
+       flag=1;
+       }
+       else{}
+    }
+   if(flag){
+   return 0;
+   }
+   else
+   {
+   return 1;
+   }
+}
+var str=new Array();
+var alpha=0;
+var beta=0;
+var Amino_Acids=new Array('A','C','D','E','F','G','H','I','K','L','M','N','P','Q','R','S','T','V','W','Y');
+var Rand_array=new Array();
+function generate()
+{
+while(Rand_array.length<5)
+{
+var pos=Math.floor(Math.random()*((Amino_Acids.length)-1));
+if(present(pos))
+{
+Rand_array.push(pos);
+}
+}
+for(var k=0;k<Rand_array.length;k++)
+{
+str[k]=Amino_Acids[Rand_array[k]];
+}
+var txt=document.getElementById("generated");
+txt.innerHTML="<B>The pepide is generated</B>";
+document.getElementById("game").style.visibility="visible";
+}
+function create(ustr,alpha,beta)
+{
+var tb=document.getElementById("tb1");
+var rindex=tb.rows.length;
+tb.insertRow(rindex);
+tb.rows[rindex].insertCell(0);
+tb.rows[rindex].cells[0].appendChild(document.createTextNode(ustr.toUpperCase()));
+tb.rows[rindex].insertCell(1);
+tb.rows[rindex].cells[1].appendChild(document.createTextNode(alpha));
+tb.rows[rindex].insertCell(2);
+tb.rows[rindex].cells[2].appendChild(document.createTextNode(beta));
+if(alpha==5)
+{
+var txt=document.getElementById("generated");
+txt.innerHTML="<B>You have guessed the peptide....congrats...you took "+(rindex+1)+" attempts</B>";
+}
+}
+function count()
+{
+       if(document.forms[0].elements[0].value.length==5)
+       {
+        alpha=0;
+        beta=0;
+       var temp_arr=document.forms[0].elements[0].value.split('');
+          for(var i=0;i<5;i++)
+          {
+           for(var j=0;j<5;j++)
+           {
+               if( i==j && str[i]==temp_arr[j].toUpperCase())
+                 {
+                 alpha++;
+                 }
+               else if( i!=j && str[i]==temp_arr[j].toUpperCase())
+               {
+                   beta++;
+               }
+                   else{}
+           }
+          }
+          var ustr=temp_arr.join('');
+          create(ustr,alpha,beta);
+       }
+       else
+       {
+       }
+}
+function clear(){
+document.forms[0].elements[0].value="";
+}
+</script>
+<style type="text/css">
+#table1  td{
+text-align:center;
+color:green;
+}
+a{
+text-decoration:none;
+}
+</style>
+</head>
+<body  style="font-family:sans-serif;" onload="clear()" bgcolor="#abcde">
+<div align="center"><font size="6" ><b>GUESS THE PEPTIDE!!!!</b></font><sub><b><font size="3" color="blue">By viswateja.N</font></b></sub>&nbsp;&nbsp;</span></div>
+<hr width="60%">
+<br>
+<div align="center">
+Please read <a href="help.html" target="__blank"><i>how to play</i></a> before pressing the button below.
+</div>
+<br>
+<div id="main" align="center">
+<input type="button" value="Click here to Generate peptide" onclick="generate()"><br><font size="2">(Print refresh to start new game)</font>
+<p id="generated"></p>
+</div>
+<div id="game" align="center" style="visibility:hidden";>
+<form name="form1">
+Enter your peptide here&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" id="ele1" name="upep" size="5" maxlength="5"  style="visibility:"><font size="2">(length should be 5 AA)</font>
+<input type="button" value="submit" onclick="count()">
+</form>
+<table  id="table1" width="300px" cellspacing="0" border="1" >
+<thead id="header" >
+<td width="150px" align="center">Peptide</td>
+<td width="75px" align="center">Alpha</td>
+<td width="75px" align="center">Beta</td>
+</thead>
+<tbody id="tb1">
+</tbody>
+</table>
+</div>
+</body>
+</html>

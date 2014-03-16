@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title></title>
+  <style type="text/css">
+  body{
+  margin-top:3em;
+  margin-left:2em;
+  }
+  #intro{
+  width:30em;
+  margin-left:5em;
+  margin-bottom:2em;
+  }
+  #intro #head{
+  margin:0 -2em 0 0;
+  padding:0 0 0 2em;
+  color:white;
+  background-color:#366;
+  }
+  #firstbox{
+  float:left;
+  margin: 0 0 0 0;
+  font-family:Verdana;
+  background-color:#366;
+  border:1px solid #000;
+
+  }
+  #secondbox{
+  float:left;
+  margin: 2px 0 0 0;
+  font-family:Verdana;
+  background-color:#366;
+  border:1px solid #000;
+
+  }
+  #secondbox table{
+  margin : 1em 2.5em 2.5em 0;
+  width:30em;
+  }
+  #firstbox table{
+  margin : 1em 0 2.5em 1em;
+  width:30em;
+  }
+  #firstbox table td {
+  color: orange;
+  border: 0.01em solid #c90;
+  margin-bottom:4px;
+  }
+  #secondbox table td {
+  color:#c90;
+  border: 0.01em solid #c90;
+  margin-bottom:4px;
+  }
+
+  </style>
+  </head>
+  <body>
+   <div id="intro">
+   <h3 id="head">
+   HSPASE- HSP Advanced Search Engine
+    </h3>
+   </div>
+  <div id="firstbox">
+  <table border="0" cellspacing="1em">
+  <form action="searchresults.php" method="get" name="advanced_form1">
+  <tr>
+  <td width="40%" id="first">
+  </td>
+  <td width="30%">KEYWORD </td>
+  <td width="30%"><input type="text" name="keyword" id="keyword"></td>
+  </tr>
+  <tr>
+  <td width="40%">
+  <input type="radio" name="radio2" value=and1 checked>AND
+  <input type="radio" name="radio2" value=or1>OR
+  </td>
+  <td width="50%">HUMAN TISSUE</td>
+  <td width="20%"><input type="text" name="organ" id="organ"></td>
+  </tr>
+  <tr>
+  <td width="40%">
+  <input type="radio" name="radio3" value=and2 checked>AND
+  <input type="radio" name="radio3" value=or2>OR
+  </td>
+  <td width="30%">STRAIN</td>
+  <td width="30%"><input type="text" name="strain" id="strain"></td>
+  </tr>
+  <tr>
+  <td width="40%">
+  <input type="radio" name="radio4" value=and3 checked>AND
+  <input type="radio" name="radio4" value=or3>OR
+  </td>
+  <td width="30%">TAXONOMY</td>
+  <td width="30%"><input type="text" name="taxonomy" id="taxonomy"></td>
+  </tr>
+  <tr>
+  <td width="40%">
+  <input type="radio" name="radio5" value=and4 checked>AND
+  <input type="radio" name="radio5" value=or4>OR
+  </td>
+  <td width="30%">AUTHOR</td>
+  <td width="30%"><input type="text" name="author" id="author"></td>
+  </tr>
+
+  </table>
+  </div>
+  <div id="secondbox">
+  <table border="0" cellspacing="4em" cellpadding="0">
+  <tr>
+  <td width="30%" id="first">
+  </td>
+  <td width="30%">Number of Titles</td>
+  <td width="31%"><input type="text" name="titles1" id="titles1" size="4">
+   TO
+   <input type="text" name="titles2" id="titles2" size="4">
+   </td>
+  </tr>
+       <tr>
+  <td width="30%">
+  <input type="radio" name="radio6" value=and5 checked>AND
+  <input type="radio" name="radio6" value=or5>OR
+  </td>
+  <td width="30%">Molecular weight</td>
+  <td width="31%"><input type="text" name="mol1" id="mol1" size="4">
+   TO
+   <input type="text" name="mol2" id="mol2" size="4">
+   </td>
+  </tr>
+       <tr>
+  <td width="30%">
+  <input type="radio" name="radio7" value=and6 checked>AND
+  <input type="radio" name="radio7" value=or6>OR
+  </td>
+  <td width="30%">Date of entry</td>
+  <td width="31%"><input type="text" name="doe1" id="doe1" size="4">
+   TO
+   <input type="text" name="doe2" id="doe2" size="4">
+   </td>
+  </tr>
+  <tr>
+  <td width="30%">
+  <input type="radio" name="radio8" value=and7 checked>AND
+  <input type="radio" name="radio8" value=or7>OR
+  </td>
+  <td width="30%">Number of aminoacids</td>
+  <td width="31%"><input type="text" name="aa1" id="aa1" size="4">
+   TO
+   <input type="text" name="aa2" id="aa2" size="4">
+   </td>
+  </tr>
+  </table>
+  <input type="submit" value="submit">
+  </form>
+
+  </div>
+
+
+  </body>
+</html>
